@@ -206,6 +206,12 @@ To ensure smooth operation, use the included install script.
    - Re-run the `i2samp.py` script.
    - When prompted, choose **N (disable)** for the `/dev/zero` playback service.
 
+9. If audio issues still persist uninstall pulse audio
+   -  ```bash
+      sudo apt remove --purge pulseaudio
+      ```
+   Do this as an absoloute last resort
+
 ### Configure API Keys
 To enable **LLM** and **TTS** functionality, configure your API keys.
 
