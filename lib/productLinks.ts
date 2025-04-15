@@ -150,7 +150,8 @@ export const productLinks: Record<string, ProductLink> = {
     name: "Bearings",
     countryLinks: {
       "US": "https://www.amazon.com/gp/product/B07FW26HD4/",
-      "CA": "https://a.co/d/gEZuu3t"
+      "CA": "https://a.co/d/gEZuu3t",
+      "AU": "https://www.amazon.com.au/696-2RS-Bearings-6x15x5mm-Pre-Lubricated-Shields/dp/B09JG1158D/ref=sr_1_1?dib=eyJ2IjoiMSJ9.McPEOZYKNlkEoxadpVp91a8O7_JPGYW_AsALE3-VO87ZAN6Vx4j7UZ8aFrXHvZ0zoHC81hwGrYWI0MUhKhkp_ZRMyjo0CtdNdEG_NHdh1AfgihhGA69E_Wu-Mq51BbMveQZ6VFt8kPptdYCEXKMpY6bFNHCWQ-zl5np0Tnhpi1liEZBW7kNvdGQHCKsqH-1ZmGy-1FmYQrSZPpyr_4x-fdOFe46QpidjDcZ2GSbIpprMdhqo4s0j9ypFIhlmRTD_wbP584X_W4au6u56U0Q9u9ZAcnMu4KcohevwKcwHdLk.QT_Wym6FJubJK-sW40xTtWSpt5VqEvJB-qaG5Jb374g&dib_tag=se&keywords=6mm%2Bx%2B15mm%2Bx%2B5mm%2BCarbon%2BSteel%2BBearings&qid=1744516399&refinements=p_n_prime_domestic%3A6845356051&rnid=6963563051&sr=8-1&th=1"
     },
     defaultLink: "https://www.amazon.com/gp/product/B07FW26HD4/"
   },
@@ -159,7 +160,8 @@ export const productLinks: Record<string, ProductLink> = {
     name: "Springs",
     countryLinks: {
       "US": "https://www.amazon.com/uxcell-Stainless-Compression-Spring-Capacity/dp/B09139BWH7",
-      "CA": "https://a.co/d/gEZuu3t"
+      "CA": "https://a.co/d/gEZuu3t",
+      "AU": "https://www.amazon.com.au/uxcell-Compression-Stainless-Compressed-Capacity/dp/B09139BWH7/ref=sr_1_1?crid=1VCXULCXNZJV7&dib=eyJ2IjoiMSJ9.CkzIEbFxnQdAsc2bih2GE-WcfzR0g59TJwI0G5jHtoQ0t5JQs4UfanU4X8qh48oJkXIdyhO5mxN4-tVCR7LPN7apsHJ7uHqHe5pHnJoimCbPaNo17q3mN_Oc6GBNqHe4fYeGskHcSyqMxM7NxOATxrdQvDzqpFiDEmxHA-3zkWB_28nQoeioW5plgHhECGjrp5KmpQDU4CqzqOqdNp_gf7aV1yk0z66vzEqTdOMEG8jb_XlBY6Umu1ywLkqvB0zRVwYIuXsvxi1BtKDRlspijRNCwyUDWcgZI6zGXDYymdc.4TSLxTtuhajIEqCeBn8RjtvI6Q-gdgZAOP2Lc8WWx_A&dib_tag=se&keywords=uxcell+Compression+Spring%2C304+Stainless+Steel%2C11mm+OD%2C0.9mm+Wire+Size%2C9mm+Compressed+Length%2C20mm+Free+Length%2C11N+Load+Capacity%2C+Silver+Tone%2C20pcs&qid=1744517070&rnid=6963563051&sprefix=%2Caps%2C248&sr=8-1"
     },
     defaultLink: "https://www.amazon.com/uxcell-Stainless-Compression-Spring-Capacity/dp/B09139BWH7"
   },
