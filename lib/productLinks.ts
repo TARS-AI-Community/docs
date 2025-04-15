@@ -63,6 +63,7 @@ export const productLinks: Record<string, ProductLink> = {
     countryLinks: {
       "US": "https://www.amazon.com/OSOYOO-3-5inch-Display-Protective-Raspberry/dp/B09CD9W6NQ/",
       "CA": "https://a.co/d/5NYHBQR",
+      "AU": "https://www.amazon.com.au/UeeKKoo-Touch-Compatible-Raspberry-Display/dp/B0DSJ5S6LV/ref=sr_1_2?dib=eyJ2IjoiMSJ9.UmQMiR4iXgWb_Gp95FFD6ih2bZDaD1y-0jBzUGrKDdwhkf_gOx4qTLJ1GUrXLipMT2YZ20zrHKWp-r0tmtJFEMNzVLBgC5UjFs5lxV-fWrjpBK_Tc8ayiuCQ9f1iAB9bgglNvXxFuAizdnX4umx0v4AmbuXpgjUIKO4_KzQnKQRCvX6AfP08AiKJ5joVkIofEJJUAOOxxJZWrRiNAsFavq_wQIgelcF0UzOhUT_dlscH1MhAjtqkfIRPvD_poKcosOhtWcnxMbP3bVZSDg9QAegboY5unfgz7B7omZrczsM.QJmFvIHL6nQ3BRLrWWQAVtFw6EZeMH8f_B09JcksytU&dib_tag=se&keywords=3.5inch+Touch+Screen+LCD+Display+HDMI+Monitor+for+RPI&qid=1744529182&refinements=p_n_prime_domestic%3A6845356051&rnid=6963563051&sr=8-2"
     },
     defaultLink: "https://www.amazon.com/OSOYOO-3-5inch-Display-Protective-Raspberry/dp/B09CD9W6NQ/"
   },
