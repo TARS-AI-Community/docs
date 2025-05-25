@@ -1,4 +1,5 @@
 import { Callout } from 'nextra/components'
+import Image from 'next/image'
 
 # Contributing to Documentation
 
@@ -22,6 +23,7 @@ Our documentation is written in MDX (Markdown + JSX) and uses [Nextra](https://n
    ```bash
    pnpm dev
    ```
+5. You can now view your changes to the website live at http://localhost:3000/
 
 ## Documentation Structure
 
@@ -33,6 +35,10 @@ Our documentation is organized as follows:
   - Other directories contain section-specific content
 
 ## Writing Guidelines
+
+<Callout type="info">
+  It is recommended to install the **MDX VSCode Extension** for development.
+</Callout>
 
 ### File Format
 - Use `.mdx` extension for documentation files
@@ -67,6 +73,19 @@ Example:
    - Images display correctly
    - Code blocks are properly formatted
    - Navigation structure is correct
+3. After verifying your changes, commit and merge your changes following the [contribution guidelines](/contribute/guidelines).
+4. Once your changes have been merged, your changes will be built with GitHub Actions.
+
+<Image
+  src="/contribute/build-complete.png"
+  alt="GitHub Actions build completion status"
+  width={1000}
+  height={100}
+/>
+
+<Callout type="info">
+  Once the build is complete (✅), your changes will be deployed to the live website within 10 minutes.
+</Callout>
 
 ## Contributing to the BoM
 
