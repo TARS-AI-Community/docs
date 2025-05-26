@@ -1,0 +1,154 @@
+import { Callout, Steps } from 'nextra/components'
+import Image from 'next/image'
+
+<Callout type="error" emoji="🚫">
+This document is for **maintainers**. If you are a contributor, please see the [Contribution Guidelines](/contribute/contribution_guidelines).
+</Callout>
+
+# Release Guidelines
+
+This document outlines the process and guidelines for releasing new versions of TARS-AI. Following these guidelines ensures consistent, high-quality releases that maintain the project's standards.
+
+## Guidelines
+
+<Callout type="warning">
+All current development should stay under `v0.x.x` (with the exception of the TARS-AI repository). Avoid using `v1.0.0` for any component until we have:
+- Lock in a stable hardware platform
+- Have reliable and tested software integrations
+- Provide complete, reproducible BoM and setup instructions
+</Callout>
+
+<Callout type="warning">
+Please review the [Versioning](/contribute/release_guidelines#understanding-version-numbers) section for more information on how version numbers are assigned.
+</Callout>
+
+<Steps>
+
+### Verify and Test
+
+Before creating a release, ensure all changes have been properly verified in the development branch:
+
+**Software:** [TARS-AI](https://github.com/TARS-AI-Community/TARS-AI)
+1. Code has been reviewed by a maintainer
+2. Changes are clearly documented in the PR description
+3. All dependencies are properly versioned and updated
+4. Changes have been tested on a completed build and no unintended regressions are introduced
+5. *IF NECESSARY*: A corresponding `docs/` PR has been created to update the Software Setup Guide
+
+**Hardware:** [hardware](https://github.com/TARS-AI-Community/hardware)
+1. Updates have been reviewed by a maintainer
+2. Changes are clearly documented in the PR description
+3. 3D printed parts, wiring, and tolerances have been tested on a completed build
+4. *IF NECESSARY*: A corresponding `docs/` PR has been created to update:
+   - The Bill of Materials
+   - The 3D Printing Guide
+   - The Step-by-Step Assembly Guide
+
+<Callout type="warning">
+  The template PRs for the software and hardware repositories will be provided by @alexander-wang03.
+</Callout>
+
+Once all items in the checklist have been verified, the PRs can be merged into the `main` branch.
+
+### Release Documentation Package
+
+After merging the PRs, prepare the documentation package and store it in the `releases` directory. It should be a zip file containing:
+- Bill of Materials (CSV)
+- 3D Printing Guide (PDF)
+- Assembly Guide (PDF)
+- Software Setup (PDF)
+
+```
+releases/
+└── vX.Y.Z/
+    └── docs-vX.Y.Z.zip    # Contains: BoM, Assembly Guide, Setup Guide, 3D Printing Guide
+```
+
+<Callout type="warning">
+@alexander-wang03 is currently creating a script that will automatically generate and store the documentation package in the `releases` directory.
+</Callout>
+
+<Callout type="warning">
+Do not modify or delete files in the `releases/` directory after they have been published. Each release should remain exactly as it was when published to maintain reproducibility.
+</Callout>
+
+### Creating GitHub Releases
+
+After creating the documentation package, use **GitHub Releases** to attach the changelog and documentation package (if necessary) to the release. This can be the same as the PR description.
+
+<Image
+  src="/contribute/tag-release.png"
+  alt="Example of a GitHub Release with tags"
+  width={800}
+  height={400}
+  className="mt-6 rounded-lg"
+/> 
+
+Each GitHub Release will have a **Git Tag** to tag every stable release. This is the actual version number of the release and what will be used to track the release in the [Releases page](/releases). It will be in the format `vX.Y.Z`.
+
+### Update the Release Page 
+
+After creating the GitHub Release, update the [Releases page](/releases) to track compatibility between versions with an entry:
+
+| TARS Version | Software | Hardware | Documentation Package | Release Date | Description |
+| ------------ | -------- | -------- | ------------------- | ------------ | ----------- |
+| v0.0.0 | [v3.0.0](https://github.com/TARS-AI-Community/TARS-AI/tree/3.0) | [v0.0.0](https://github.com/TARS-AI-Community/hardware/tree/v0.0.0) | [Download](https://github.com/TARS-AI-Community/docs/tree/main/releases/v0.0.0) | May 25, 2025 | High-level overview of the Release |
+
+- Software and Hardware columns link to their respective repository tag versions
+- Documentation Package column links to the documentation package in the `releases` directory
+
+</Steps>
+
+### Summary of the Release Process
+
+1. Finalize and test hardware and software changes
+2. Create versioned documentation packages
+3. Create GitHub Release with changelog and tag/release number (X.Y.Z)
+4. Update Releases page
+5. Post to community (Discord, docs, etc.) 😊
+
+## Understanding Version Numbers
+
+We follow [Semantic Versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
+
+### 🛜 Software (`vX.Y.Z`)
+
+- **MAJOR (X)**: Breaking API or behavioral changes
+- **MINOR (Y)**: New features, hardware interface changes, backwards-compatible
+- **PATCH (Z)**: Bug fixes, performance improvements, docs tweaks
+
+### 🛠️ Hardware (`vX.Y.Z`)
+
+- **MAJOR (X)**: Major mechanical/wiring redesigns (e.g., servo mount relocation)
+- **MINOR (Y)**: Backwards-compatible improvements (e.g., wire cleanup, tolerances)
+- **PATCH (Z)**: Small tweaks, fix interferences, better labels
+
+### 🤖 TARS (`vX.Y`)
+
+TARS version numbers represent the overall state of the project:
+
+- **MAJOR (X)**: Foundational changes to TARS's core architecture, principles, or operation
+  - Complete redesign of the robot's core functionality
+  - Major changes to how TARS components interact
+  - Breaking changes that affect the entire ecosystem
+
+- **MINOR (Y)**: Significant changes in either software or hardware
+  - Major version changes in software (breaking API changes)
+  - Major version changes in hardware (redesigns)
+  - New features that substantially enhance capabilities
+
+<Callout type="info">
+Note: TARS versions do not have a patch number, as minor updates to components are tracked in their respective repositories.
+</Callout>
+
+For example:
+- If software has a breaking change (v1.0.0 → v2.0.0), TARS goes from v1.**2** → v1.**3**
+- If hardware has a major redesign (v1.0.0 → v2.0.0), TARS goes from v1.**3** → v1.**4**
+- If TARS fundamentally changes how it operates, it goes from **v1.4** → **v2.0**
+
+<Callout type="default" emoji="👉">
+  **Documentation Contributors:** @alexander-wang03
+</Callout>
+
+
+

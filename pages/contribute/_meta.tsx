@@ -1,4 +1,5 @@
 export default {
-  "guidelines": "Contribute to TARS-AI",
-  "docs": "Contribute to Docs"
+  "contribution_guidelines": "Contribution Guidelines",
+  "contribute_docs": "Contribute to Docs",
+  "release_guidelines": "Release Guidelines"
 } 
