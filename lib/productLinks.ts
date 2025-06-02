@@ -13,7 +13,7 @@ export const productLinks: Record<string, ProductLink> = {
     countryLinks: {
       "US": "https://us.store.bambulab.com/collections/3d-printer",
       "CA": "https://ca.store.bambulab.com/collections/3d-printer",
-      "Au": "https://au.store.bambulab.com/collections/3d-printer",
+      "AU": "https://au.store.bambulab.com/collections/3d-printer",
       "PL": "https://eu.store.bambulab.com/collections/3d-printer"
     },
     defaultLink: "https://us.store.bambulab.com/collections/3d-printer"
