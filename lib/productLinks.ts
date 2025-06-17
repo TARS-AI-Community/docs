@@ -7,6 +7,7 @@ export interface ProductLink {
 }
 
 export const productLinks: Record<string, ProductLink> = {
+  // 3D Printing
   "bambu-lab-printer": {
     id: "bambu-lab-printer",
     name: "Bambu Lab Printer",
@@ -17,17 +18,6 @@ export const productLinks: Record<string, ProductLink> = {
       "PL": "https://eu.store.bambulab.com/collections/3d-printer"
     },
     defaultLink: "https://us.store.bambulab.com/collections/3d-printer"
-  },
-  "tpu-filament": {
-    id: "tpu-filament",
-    name: "TPU Filament (Bambu)",
-    countryLinks: {
-      "US": "https://us.store.bambulab.com/products/tpu-for-ams",
-      "CA": "https://ca.store.bambulab.com/products/tpu-for-ams",
-      "AU": "https://au.store.bambulab.com/products/tpu-85a-tpu-90a?id=573760925208563742",
-      "PL": "https://eu.store.bambulab.com/en-pl/products/tpu-for-ams"
-    },
-    defaultLink: "https://us.store.bambulab.com/products/tpu-for-ams"
   },
   "petg-filament": {
     id: "petg-filament",
@@ -51,9 +41,21 @@ export const productLinks: Record<string, ProductLink> = {
     },
     defaultLink: "https://us.store.bambulab.com/products/pla-basic-filament?skr=yes"
   },
-  "raspberry-pi-5": {
+  "tpu-filament": {
+    id: "tpu-filament",
+    name: "TPU Filament (Bambu)",
+    countryLinks: {
+      "US": "https://us.store.bambulab.com/products/tpu-for-ams",
+      "CA": "https://ca.store.bambulab.com/products/tpu-for-ams",
+      "AU": "https://au.store.bambulab.com/products/tpu-85a-tpu-90a?id=573760925208563742",
+      "PL": "https://eu.store.bambulab.com/en-pl/products/tpu-for-ams"
+    },
+    defaultLink: "https://us.store.bambulab.com/products/tpu-for-ams"
+  },
+  // Core Components
+  "raspberry-pi-": {
     id: "raspberry-pi-5",
-    name: "Raspberry Pi 5",
+    name: "Raspberry Pi 5 (4GB+ RAM)",
     countryLinks: {
       "US": "https://www.amazon.com/Raspberry-Pi-Quad-core-Cortex-A76-Processor/dp/B0CTQ3BQLS/",
       "CA": "https://a.co/d/9CoZ6or",
@@ -62,16 +64,21 @@ export const productLinks: Record<string, ProductLink> = {
     },
     defaultLink: "https://www.amazon.com/Raspberry-Pi-Quad-core-Cortex-A76-Processor/dp/B0CTQ3BQLS/"
   },
-  "osoyoo-lcd": {
-    id: "osoyoo-lcd",
-    name: "OSOYOO 3.5\" LCD Display",
+  "pi-cooler": {
+    id: "pi-cooler",
+    name: "Raspberry Pi 5 Active Cooler",
     countryLinks: {
-      "US": "https://www.amazon.com/OSOYOO-3-5inch-Display-Protective-Raspberry/dp/B09CD9W6NQ/",
-      "CA": "https://a.co/d/5NYHBQR",
-      "AU": "https://www.amazon.com.au/UeeKKoo-Touch-Compatible-Raspberry-Display/dp/B0DSJ5S6LV/ref=sr_1_2?dib=eyJ2IjoiMSJ9.UmQMiR4iXgWb_Gp95FFD6ih2bZDaD1y-0jBzUGrKDdwhkf_gOx4qTLJ1GUrXLipMT2YZ20zrHKWp-r0tmtJFEMNzVLBgC5UjFs5lxV-fWrjpBK_Tc8ayiuCQ9f1iAB9bgglNvXxFuAizdnX4umx0v4AmbuXpgjUIKO4_KzQnKQRCvX6AfP08AiKJ5joVkIofEJJUAOOxxJZWrRiNAsFavq_wQIgelcF0UzOhUT_dlscH1MhAjtqkfIRPvD_poKcosOhtWcnxMbP3bVZSDg9QAegboY5unfgz7B7omZrczsM.QJmFvIHL6nQ3BRLrWWQAVtFw6EZeMH8f_B09JcksytU&dib_tag=se&keywords=3.5inch+Touch+Screen+LCD+Display+HDMI+Monitor+for+RPI&qid=1744529182&refinements=p_n_prime_domestic%3A6845356051&rnid=6963563051&sr=8-2",
-      "PL": "https://botland.com.pl/wyswietlacze-raspberry-pi/4479-ekran-dotykowy-a-rezystancyjny-lcd-tft-35-320x480px-gpio-dla-raspberry-pi-4-3-2-b-zero-waveshare-9904-5904422371296.html"
+      "US": "https://a.co/d/67AzMT5"
     },
-    defaultLink: "https://www.amazon.com/OSOYOO-3-5inch-Display-Protective-Raspberry/dp/B09CD9W6NQ/"
+    defaultLink: "https://a.co/d/67AzMT5"
+  },
+  "5-inch-screen": {
+    id: "5-inch-screen",
+    name: "5 Inch Screen",
+    countryLinks: {
+      "US": "https://a.co/d/gGMHsmu",
+    },
+    defaultLink: "https://a.co/d/gGMHsmu"
   },
   "servo-driver": {
     id: "servo-driver",
@@ -83,19 +90,26 @@ export const productLinks: Record<string, ProductLink> = {
     },
     defaultLink: "https://www.amazon.com/gp/product/B00EIB0U7A/"
   },
-  "buck-converter-12v-6v": {
-    id: "buck-converter-12v-6v",
-    name: "12V to 6V Buck Converter",
+  // Power Components
+  "12v-battery": {
+    id: "12v-battery",
+    name: "12V Battery",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B07SGJSLDL/",
-      "CA": "https://a.co/d/59a7i9D",
-      "PL": "https://www.joom.com/pl/products/5cb3face6ecda8010164b347?currency=PLN&utm_productid=5cb3face6ecda8010164b347&utm_feed=web&utm_hash=54fe06bffd4b4f5bdcd0f7334bc4e1ef&variant_id=5cb3face6ecda8040164b349&gsAttrs=eyJyZWdpb24iOiJQTCIsICJzcGVjaWFsUHJpY2VVc2VkIjpmYWxzZX0g&exp_price=MjcuNiAg&utm_audienceid=advertising_web_gg_premium_2d&srsltid=AfmBOor7nv9ToSUG2Y88hOLQ7nn9NHBv_ASS7dhHeiPTEJ0IJHxx0KKPv7A"
+      "US": "https://a.co/d/jiIPfNq",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B07SGJSLDL/"
+    defaultLink: "https://a.co/d/jiIPfNq"
   },
-  "usb-buck-converter": {
-    id: "usb-buck-converter",
-    name: "USB Buck Converter",
+  "buck-converter-servos": {
+    id: "buck-converter-servos",
+    name: "Buck Converter for Servos",
+    countryLinks: {
+      "US": "https://a.co/d/dQAB650",
+    },
+    defaultLink: "https://a.co/d/dQAB650"
+  },
+  "buck-converter-pi": {
+    id: "buck-converter-pi",
+    name: "Buck Converter for Raspberry Pi",
     countryLinks: {
       "US": "https://www.amazon.com/gp/product/B07X5H4M42/",
       "CA": "https://a.co/d/abI7Dbe",
@@ -103,164 +117,89 @@ export const productLinks: Record<string, ProductLink> = {
     },
     defaultLink: "https://www.amazon.com/gp/product/B07X5H4M42/"
   },
-  "usb-buck-converter-alt": {
-    id: "usb-buck-converter-alt",
-    name: "USB Buck Converter (Alternative)",
+  "rocker-switch": {
+    id: "rocker-switch",
+    name: "Micro Rocker Switch",
     countryLinks: {
-      "US": "https://www.amazon.com/dp/B087RHWTJW",
+      "US": "https://a.co/d/iw8nmbf",
     },
-    defaultLink: "https://www.amazon.com/dp/B087RHWTJW"
+    defaultLink: "https://a.co/d/iw8nmbf"
   },
-  "lipo-battery": {
-    id: "lipo-battery",
-    name: "LiPo Battery",
+  "usb-c-breakout": {
+    id: "usb-c-breakout",
+    name: "USB C Male Breakout Board",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B0BYNSH6Q7/",
-      "CA": "https://a.co/d/96gR1yJ",
-      "PL": "https://allegro.pl/oferta/bateria-li-po-11-1v-3s-2200mah-44a-20c-redox-jakar-16588519628?utm_feed=aa34192d-eee2-4419-9a9a-de66b9dfae24&utm_source=google&utm_medium=cpc&utm_campaign=_elktrk_rtvagd_pla_pmax&ev_campaign_id=17966335829&gad_source=1&gclid=CjwKCAiArKW-BhAzEiwAZhWsIDDqZ__iZeTHcKwtkq-JlLK9KoPG1ab81VcrjS2A5JXH4BEya9sUgRoC7EEQAvD_BwE"
+      "US": "https://a.co/d/c7BW1bT",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B0BYNSH6Q7/"
+    defaultLink: "https://a.co/d/c7BW1bT"
   },
-  "wire-connectors": {
-    id: "wire-connectors",
-    name: "PCT-214 Wire Connectors",
+  "ina260-battery-sensor": {
+    id: "ina260-battery-sensor",
+    name: "INA260 Battery Sensor",
     countryLinks: {
-      "US": "https://www.amazon.com/smseace-Conductor-Connectors-Connection-Terminal/dp/B087PBHG9L/",
-      "CA": "https://a.co/d/5MsLj3e"
+      "US": "https://a.co/d/dCbYTlY",
     },
-    defaultLink: "https://www.amazon.com/smseace-Conductor-Connectors-Connection-Terminal/dp/B087PBHG9L/"
+    defaultLink: "https://a.co/d/dCbYTlY"
   },
-  "mg996r-servos": {
-    id: "mg996r-servos",
-    name: "MG996R Servos",
+  "22-awg-wire-flexible": {
+    id: "22-awg-wire-flexible",
+    name: "22 Gauge Flexible Wire",
     countryLinks: {
-      "US": "https://www.amazon.com/diymore-6-Pack-MG996R-Digital-Helicopter/dp/B0CGRP59HJ/",
-      "CA": "https://a.co/d/99rqy0O",
-      "PL": "https://pl.aliexpress.com/i/32951980789.html"
+      "US": "https://a.co/d/hAJWgyZ",
     },
-    defaultLink: "https://www.amazon.com/diymore-6-Pack-MG996R-Digital-Helicopter/dp/B0CGRP59HJ/"
+    defaultLink: "https://a.co/d/hAJWgyZ"
   },
-  "mg996r-servos-alt": {
-    id: "mg996r-servos-alt",
-    name: "MG996R Servos (Alternative)",
+  "18-awg-wire-parallel": {
+    id: "18-awg-wire-parallel",
+    name: "18 Gauge 2 Conductor Parallel Wire",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B0BMM1G74B/",
+      "US": "https://a.co/d/cghGb3z",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B0BMM1G74B/"
+    defaultLink: "https://a.co/d/cghGb3z"
   },
-  "sg90-micro-servos": {
-    id: "sg90-micro-servos",
-    name: "SG90 Micro Servos",
+  // Servos
+  "ldx-227-servos": {
+    id: "ldx-227-servos",
+    name: "LDX-227 Servos",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B07L2SF3R4/",
-      "CA": "https://a.co/d/2wvfbug",
-      "PL": "https://allegro.pl/oferta/serwomechanizm-tower-pro-sg90-serwo-sg90-13374256076?offerId=13374256076&inventoryUnitId=Ut4PqWXWosZNVBEdWn_z7w&adGroupId=MjJkZGZlYWEtMTVlMC00MDQxLTg2OGYtYTg2MGE1MjI2YTc4AA&campaignId=NjYxYmUyM2MtNGVkOC00YjA2LThlZGQtZDhiMmExMTQ3MDE0AA&clientId=MTA5NTYwNDM3AA&sig=60e37083f8dbfc7f71b3f84f2ff5db6e&utm_feed=aa34192d-eee2-4419-9a9a-de66b9dfae24&utm_content=ps&utm_source=google&utm_medium=ads&gad_source=1&gclid=CjwKCAiArKW-BhAzEiwAZhWsIM2dkjXOdJJE-uis0v2Lz5b5yT1eZRKTcDYRGneRQk2vLASL7uHK5RoCkTgQAvD_BwE"
+      "US": "https://a.co/d/6Vvombc",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B07L2SF3R4/"
+    defaultLink: "https://a.co/d/6Vvombc"
   },
-  "bearings": {
-    id: "bearings",
-    name: "Bearings",
+  "mg90s-servos": {
+    id: "mg90s-servos",
+    name: "MG90s Servos",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B07FW26HD4/",
-      "CA": "https://a.co/d/gEZuu3t",
-      "AU": "https://www.amazon.com.au/696-2RS-Bearings-6x15x5mm-Pre-Lubricated-Shields/dp/B09JG1158D/ref=sr_1_1?dib=eyJ2IjoiMSJ9.McPEOZYKNlkEoxadpVp91a8O7_JPGYW_AsALE3-VO87ZAN6Vx4j7UZ8aFrXHvZ0zoHC81hwGrYWI0MUhKhkp_ZRMyjo0CtdNdEG_NHdh1AfgihhGA69E_Wu-Mq51BbMveQZ6VFt8kPptdYCEXKMpY6bFNHCWQ-zl5np0Tnhpi1liEZBW7kNvdGQHCKsqH-1ZmGy-1FmYQrSZPpyr_4x-fdOFe46QpidjDcZ2GSbIpprMdhqo4s0j9ypFIhlmRTD_wbP584X_W4au6u56U0Q9u9ZAcnMu4KcohevwKcwHdLk.QT_Wym6FJubJK-sW40xTtWSpt5VqEvJB-qaG5Jb374g&dib_tag=se&keywords=6mm%2Bx%2B15mm%2Bx%2B5mm%2BCarbon%2BSteel%2BBearings&qid=1744516399&refinements=p_n_prime_domestic%3A6845356051&rnid=6963563051&sr=8-1&th=1"
+      "US": "https://a.co/d/2ME6Dyk",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B07FW26HD4/"
+    defaultLink: "https://a.co/d/2ME6Dyk"
   },
-  "springs": {
-    id: "springs",
-    name: "Springs",
+  "servo-cables": {
+    id: "servo-cables",
+    name: "12\" Servo Extension Cables (Male to Female, JR/Futaba)",
     countryLinks: {
-      "US": "https://www.amazon.com/uxcell-Stainless-Compression-Spring-Capacity/dp/B09139BWH7",
-      "CA": "https://a.co/d/gEZuu3t",
-      "AU": "https://www.amazon.com.au/uxcell-Compression-Stainless-Compressed-Capacity/dp/B09139BWH7/ref=sr_1_1?crid=1VCXULCXNZJV7&dib=eyJ2IjoiMSJ9.CkzIEbFxnQdAsc2bih2GE-WcfzR0g59TJwI0G5jHtoQ0t5JQs4UfanU4X8qh48oJkXIdyhO5mxN4-tVCR7LPN7apsHJ7uHqHe5pHnJoimCbPaNo17q3mN_Oc6GBNqHe4fYeGskHcSyqMxM7NxOATxrdQvDzqpFiDEmxHA-3zkWB_28nQoeioW5plgHhECGjrp5KmpQDU4CqzqOqdNp_gf7aV1yk0z66vzEqTdOMEG8jb_XlBY6Umu1ywLkqvB0zRVwYIuXsvxi1BtKDRlspijRNCwyUDWcgZI6zGXDYymdc.4TSLxTtuhajIEqCeBn8RjtvI6Q-gdgZAOP2Lc8WWx_A&dib_tag=se&keywords=uxcell+Compression+Spring%2C304+Stainless+Steel%2C11mm+OD%2C0.9mm+Wire+Size%2C9mm+Compressed+Length%2C20mm+Free+Length%2C11N+Load+Capacity%2C+Silver+Tone%2C20pcs&qid=1744517070&rnid=6963563051&sprefix=%2Caps%2C248&sr=8-1"
+      "US": "https://a.co/d/4O9tu2w",
     },
-    defaultLink: "https://www.amazon.com/uxcell-Stainless-Compression-Spring-Capacity/dp/B09139BWH7"
+    defaultLink: "https://a.co/d/4O9tu2w"
   },
-  "springs-alt-1": {
-    id: "springs-alt-1",
-    name: "Springs (Alternative 1)",
+  // Audio System
+  "wm8960-audio-hat": {
+    id: "wm8960-audio-hat",
+    name: "WM8960 Audio HAT",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B076M6SFFP/",
+      "US": "https://a.co/d/98fzAf5",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B076M6SFFP/"
-  },
-  "springs-alt-2": {
-    id: "springs-alt-2",
-    name: "Springs (Alternative 2)",
-    countryLinks: {
-      "US": "https://www.aliexpress.us/item/3256805126221346.html",
-    },
-    defaultLink: "https://www.aliexpress.us/item/3256805126221346.html"
-  },
-  "metal-rods-5mm": {
-    id: "metal-rods-5mm",
-    name: "Metal Rods 5mm",
-    countryLinks: {
-      "US": "https://www.amazon.com/dp/B005WPAKGC",
-      "CA": "https://a.co/d/1XdMgYk"
-    },
-    defaultLink: "https://www.amazon.com/dp/B005WPAKGC"
-  },
-  "metal-rods-3mm": {
-    id: "metal-rods-3mm",
-    name: "Metal Rods 3mm",
-    countryLinks: {
-      "US": "https://www.amazon.com/dp/B005WPAJKY",
-      "CA": "https://a.co/d/9qHcJ62"
-    },
-    defaultLink: "https://www.amazon.com/dp/B005WPAJKY"
-  },
-  "linkage": {
-    id: "linkage",
-    name: "Linkage",
-    countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B0CRDRWYXW/",
-      "CA": "https://a.co/d/e8L6H7Y"
-    },
-    defaultLink: "https://www.amazon.com/gp/product/B0CRDRWYXW/"
-  },
-  "servo-extension-wires": {
-    id: "servo-extension-wires",
-    name: "JR Servo Extension Wires",
-    countryLinks: {
-      "US": "https://www.amazon.com/OliYin-7-87in-Quadcopter-Extension-Futaba/dp/B0711TBZY2/",
-      "CA": "https://a.co/d/bDIlS8e"
-    },
-    defaultLink: "https://www.amazon.com/OliYin-7-87in-Quadcopter-Extension-Futaba/dp/B0711TBZY2/"
-  },
-  "usb-microphone": {
-    id: "usb-microphone",
-    name: "Mini USB Microphone",
-    countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B086DRRP79/",
-      "CA": "https://a.co/d/hf1fp7L",
-      "PL": "https://www.amazon.pl/Mikrofon-Przenośny-Nagrywanie-Adapter-Komputera/dp/B0BHYC2MYV/ref=asc_df_B0BHYC2MYV/?tag=plshogostdde-21&linkCode=df0&hvadid=665355056766&hvpos=&hvnetw=g&hvrand=5412411992864764419&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1011541&hvtargid=pla-2196447517193&mcid=2b982368276d3457a307eb75ba1c5ae8&th=1"
-    },
-    defaultLink: "https://www.amazon.com/gp/product/B086DRRP79/"
-  },
-  "audio-amplifier": {
-    id: "audio-amplifier",
-    name: "MAX98357 Audio Amplifier",
-    countryLinks: {
-      "US": "https://www.amazon.com/dp/B0BTBS5NW2/",
-      "CA": "https://a.co/d/2tc800r",
-      "AU": "https://www.amazon.com.au/AITIAO-4Pcs-Amplifier-Amplifiers-Filterless/dp/B0B5TTJC1M/ref=sr_1_1?crid=3PXG2LFF5JFHZ&dib=eyJ2IjoiMSJ9.WIuT8ccl_KHX2Nc4jWKLjMzxRxPDLggtvQkts_gpp9v3QBAoiseP7a2jJ3LzRa6f2YPn9dYY4ugWwUjc6zLvp7VEYdVoIDM6QtcmPYlNzvezwMOCqfvquwdk0VicgH0V2XlCuuqDTjvbHiiKZu3bUvDhNr0xyibo_k0cUTrW6pFnJjrceDDjxI002jDxSYd4M9k2V3zydgphlQDOAdZpKIXK_oBGISIrhPw3SBjEzsOWM96jQLxp0hAhL0RjexdNBFRF7-D2sIqjz6BZ-cZNwv_wT72RyxNXofsrvT6H3D4GHiwlPKwB7UEw1mcIQll1casp6GdPCg5uqtCS11Apao5AHxQDHB-odP5LHnTK_ST6eAn-cext1mPysDQeXGs3rC0mzKuX-IBl7OC57AkDYkaSpf5RDIHr_YOhjbiZFjyzTce3YQy1CaMoHuKsJSxN.Vc9Ebr7aFLiDOvFGtRo26sc-q1qNCWdjdu7_fR5p_qk&dib_tag=se&keywords=i2s+audio+amplifier+4pc&qid=1743304268&sprefix=i2s+audio+amplifier+4%2Caps%2C459&sr=8-1",
-      "PL": "https://pl.aliexpress.com/item/1005003035501023.html?src=google&pdp_npi=4%40dis!PLN!12.39!12.39!!!!!%40!12000023365388194!ppc!!!"
-    },
-    defaultLink: "https://www.amazon.com/dp/B0BTBS5NW2/"
+    defaultLink: "https://a.co/d/98fzAf5"
   },
   "speaker": {
     id: "speaker",
-    name: "3W 8Ω Speaker",
+    name: "PH2.0-N 3W 4Ω Speaker",
     countryLinks: {
-      "US": "https://www.amazon.com/dp/B07GJ4GH67/",
-      "AU": "https://www.amazon.com.au/ATNSINC-Full-Range-Advertising-Separating-Interface/dp/B0DSZJ8TXD/ref=sr_1_2?crid=19CI2JNLA2ILQ&dib=eyJ2IjoiMSJ9.k3NvhbvvVuTmwSc8dpntX7wFXjODw4PXjQ0eRmDrbgZoOkqvtZhJFhhqgAMlQKMg4o6zaZBV85yD4nA1zpJFxrfEYmLBvayxMMfQ-QJnhV84UEEo_H_2z0msVZqrhrTmZBJ6orgPZ6cODPSV91cNlm5bajm6ShofzBKgJVKJxy61rMs02mPaBph0Ktk5urwLrQM__PrneJ5scEn8UtYjP3jGMf0MLVq4qNaUIc2wiLNSo0DK2-rpbZNVyNtcg6UrY-L7I0HrDPIvKS4qnbbsdnb2f8fHuZEJFkAxnpt8gt3rF1WtEu3YItXMsaTrlDpuh0LFFpSgrRSpdsJnzBRKgcGWZzjcL7OXg6xEckFv3C5Qs3QHI1V95nZc8dXidNU0rwnxcOP-lgwBkZx2oscHip7WKOIO4R48FN8qyPCOtlC90vKUla4odeQVlzVTJ-Eq.V7e2s2GMyweU-fss3wcgHY6cXvuQIQW4NPNgfOLP0jk&dib_tag=se&keywords=Speaker%2B3%2BWatt%2B8%2BOhm%2BSingle%2BCavity%2BMini%2BSpeaker%2BFull-Range%2BCavity%2BMobile%2BPortable%2BAdvertising%2BMachine%2BSpeaker%2BConnector%2BSeparating%2BInterface%2B3.3V%2B5V&qid=1743303395&sprefix=%2Caps%2C218&sr=8-2&th=1",
-      "PL": "https://pl.aliexpress.com/item/32794499078.html?spm=a2g0o.productlist.main.19.1e4fn1a0n1a0q4&algo_pvid=d63da49e-7a3e-46c3-b18f-57d2f56a7a24&algo_exp_id=d63da49e-7a3e-46c3-b18f-57d2f56a7a24-9&pdp_ext_f=%7B"
+      "US": "https://a.co/d/4DsIUgf",
     },
-    defaultLink: "https://www.amazon.com/dp/B07GJ4GH67/"
+    defaultLink: "https://a.co/d/4DsIUgf"
   },
+  // Camera System
   "camera-module": {
     id: "camera-module",
     name: "OV5647 Camera Module",
@@ -273,39 +212,117 @@ export const productLinks: Record<string, ProductLink> = {
   },
   "camera-ribbon-cable": {
     id: "camera-ribbon-cable",
-    name: "15Pin to 22Pin Camera Ribbon Cable",
+    name: "DSI Display Cable, 22-to-15 Pin, 200mm",
     countryLinks: {
-      "US": "https://www.amazon.com/Onyehn-Raspberry-Camera-Cable-Ribbon/dp/B07XZ5DX5H/",
-      "CA": "https://a.co/d/gYzFbJ5"
+      "US": "https://a.co/d/9yLM4VJ",
     },
-    defaultLink: "https://www.amazon.com/Onyehn-Raspberry-Camera-Cable-Ribbon/dp/B07XZ5DX5H/"
+    defaultLink: "https://a.co/d/9yLM4VJ"
   },
-  "m3-screw-kit": {
-    id: "m3-screw-kit",
-    name: "M3 Assorted Flat Head Screw Kit",
+  // Hardware
+  "m2.5-screws-assorted": {
+    id: "m2.5-screws-assorted",
+    name: "M2.5 Flat Head Assorted Screws",
     countryLinks: {
-      "US": "https://a.co/d/bC30GoT",
-      "CA": "https://a.co/d/anPAyTs"
+      "US": "https://a.co/d/5KtMOV0",
     },
-    defaultLink: "https://a.co/d/bC30GoT"
+    defaultLink: "https://a.co/d/5KtMOV0"
   },
-  "m3-grub-screws": {
-    id: "m3-grub-screws",
-    name: "M3 Asstd Grub Screws",
+  "m2.5-heat-inserts": {
+    id: "m2.5-heat-inserts",
+    name: "M2.5 Heat Inserts",
     countryLinks: {
-      "US": "https://www.amazon.com/dp/B07N7C6HKP/",
-      "CA": "https://a.co/d/hKRXqgt"
+      "US": "https://a.co/d/3ZJZQhx",
     },
-    defaultLink: "https://www.amazon.com/dp/B07N7C6HKP/"
+    defaultLink: "https://a.co/d/3ZJZQhx"
   },
-  "m2-self-tapping": {
-    id: "m2-self-tapping",
-    name: "M2.x Self Tapping",
+  "magnet-8x3": {
+    id: "magnet-8x3",
+    name: "8x3mm Magnets",
     countryLinks: {
-      "US": "https://www.amazon.com/gp/product/B0BLY1MPLR/",
-      "CA": "https://a.co/d/8wvMdGF"
+      "US": "https://a.co/d/ikQLtfm",
     },
-    defaultLink: "https://www.amazon.com/gp/product/B0BLY1MPLR/"
+    defaultLink: "https://a.co/d/ikQLtfm"
+  },
+  "compression-springs": {
+    id: "compression-springs",
+    name: "Compression Spring",
+    countryLinks: {
+      "US": "https://a.co/d/78x72h2",
+    },
+    defaultLink: "https://a.co/d/78x72h2"
+  },
+  "m4-100mm-rod": {
+    id: "m4-100mm-rod",
+    name: "M4 x 100mm Rod",
+    countryLinks: {
+      "US": "https://a.co/d/1P89H8p"
+    },
+    defaultLink: "https://a.co/d/1P89H8p"
+  },
+  "m4-65mm-rod": {
+    id: "m4-65mm-rod",
+    name: "M4 x 65mm Rod",
+    countryLinks: {
+      "US": "https://a.co/d/2AvIA0n"
+    },
+    defaultLink: "https://a.co/d/2AvIA0n"
+  },
+  "m4-95mm-rod": {
+    id: "m4-95mm-rod",
+    name: "M4 x 65mm Rod",
+    countryLinks: {
+      "US": ""
+    },
+    defaultLink: ""
+  },
+  "m2-tapping-screws": {
+    id: "m2-tapping-screws",
+    name: "M2 Tapping Screws",
+    countryLinks: {
+      "US": "https://a.co/d/dm5dpgL"
+    },
+    defaultLink: "https://a.co/d/dm5dpgL"
+  },
+  "696zz-bearings": {
+    id: "696zz-bearings",
+    name: "696ZZ Bearings",
+    countryLinks: {
+      "US": "https://a.co/d/eE4wT3m",
+    },
+    defaultLink: "https://a.co/d/eE4wT3m"
+  },
+  "velcro-straps": {
+    id: "velcro-straps",
+    name: "6\" Velcro Straps",
+    countryLinks: {
+      "US": "https://a.co/d/iOyyajq"
+    },
+    defaultLink: "https://a.co/d/iOyyajq"
+  },
+  "stackable-header": {
+    id: "stackable-header",
+    name: "Extra Tall Female Stackable Header 2x20",
+    countryLinks: {
+      "US": "https://a.co/d/diQkJR2"
+    },
+    defaultLink: "https://a.co/d/diQkJR2"
+  },
+  // Hailo HAT Modifications
+  "hailo-hat": {
+    id: "hailo-hat",
+    name: "26 TOPS Hailo HAT Module",
+    countryLinks: {
+      "US": "https://a.co/d/hIXcTnE"
+    },
+    defaultLink: "https://a.co/d/hIXcTnE"
+  },
+  "m2.5-40mm-screws": {
+    id: "m2.5-40mm-screws",
+    name: "M2.5 40mm Fastener Screws",
+    countryLinks: {
+      "US": "https://a.co/d/3DNMAdv"
+    },
+    defaultLink: "https://a.co/d/3DNMAdv"
   }
 };
 
