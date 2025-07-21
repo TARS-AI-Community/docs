@@ -34,7 +34,7 @@ The following materials should be ordered for the assembly of TARS-AI. For 3D pr
   </div>
 </div>
 
-Last updated: 25/03/2025
+Last updated: 18/07/2025
 
 <Table>
   <thead>
@@ -49,8 +49,8 @@ Last updated: 25/03/2025
   <tbody>
     <Tr>
       <Td rowSpan="5"><strong>3D Printing</strong></Td>
-      <Td>Bambu Lab Printer</Td>
-      <Td>Compatible models: A1, P1S, X1C+</Td>
+      <Td>3D Printer</Td>
+      <Td>Ex: A1, P1S, etc. AMS recommended.</Td>
       <Td>1</Td>
       <Td><CountryLink productId="bambu-lab-printer">Buy</CountryLink></Td>
     </Tr>
@@ -67,8 +67,8 @@ Last updated: 25/03/2025
       <Td><CountryLink productId="pla-filament">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>TPU Filament</Td>
-      <Td>For all "flexor" parts.</Td>
+      <Td>TPU Filament (OPTIONAL)</Td>
+      <Td>For all flexible parts.</Td>
       <Td>1</Td>
       <Td><CountryLink productId="tpu-filament">Buy</CountryLink></Td>
     </Tr>
@@ -100,7 +100,7 @@ Last updated: 25/03/2025
       <Td><CountryLink productId="5-inch-screen">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>PCA9685 16-Channel 12-Bit PWM/Servo Driver</Td>
+      <Td>PCA9685 16-Channel PWM/Servo Driver</Td>
       <Td>I2C interface for servo control</Td>
       <Td>1</Td>
       <Td><CountryLink productId="servo-driver">Buy</CountryLink></Td>
@@ -114,14 +114,14 @@ Last updated: 25/03/2025
       <Td><CountryLink productId="12v-battery">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>DC 5A Adjustable Buck Module</Td>
+      <Td>LM2596 DC 5A Adjustable Buck Converter</Td>
       <Td>Step-down converter for the servos (12 to 6V)</Td>
       <Td>1</Td>
       <Td><CountryLink productId="buck-converter-servos">Buy</CountryLink></Td>
     </Tr>
     <Tr>
       <Td>DC 6A USB Voltage Regulator</Td>
-      <Td>Step-down converter for the RPi (12V to 5V, 5A)</Td>
+      <Td>Step-down converter for the Pi (12V to 5V, 5A)</Td>
       <Td>1</Td>
       <Td><CountryLink productId="buck-converter-pi">Buy</CountryLink></Td>
     </Tr>
@@ -133,7 +133,7 @@ Last updated: 25/03/2025
     </Tr>
     <Tr>
       <Td>USB C Male Breakout Board</Td>
-      <Td>Power connection</Td>
+      <Td>Power connection for the Pi</Td>
       <Td>1</Td>
       <Td><CountryLink productId="usb-c-breakout">Buy</CountryLink></Td>
     </Tr>
@@ -144,28 +144,34 @@ Last updated: 25/03/2025
       <Td><CountryLink productId="ina260-battery-sensor">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>22 Gauge Flexible Wire</Td>
-      <Td>Power wiring for INA260 and PCA9685.</Td>
-      <Td>?</Td>
-      <Td><CountryLink productId="22-awg-wire-flexible">Buy</CountryLink></Td>
+      <Td>20cm Dupont Cables (Male to Female)</Td>
+      <Td>Connection cables for INA260 and PCA9685.</Td>
+      <Td>12</Td>
+      <Td><CountryLink productId="dupont-cables">Buy</CountryLink></Td>
     </Tr>
     <Tr>
       <Td>18 Gauge 2 Conductor Parallel Wire</Td>
-      <Td>Parallel power wiring for cleaner connections.</Td>
-      <Td>?</Td>
+      <Td>Parallel power wiring. ~200cm</Td>
+      <Td>1</Td>
       <Td><CountryLink productId="18-awg-wire-parallel">Buy</CountryLink></Td>
     </Tr>
 
     <Tr>
-      <Td rowSpan="3"><strong>Servo Motors</strong></Td>
-      <Td>LDX-227 Servo</Td>
-      <Td>Servo for the main body.</Td>
+      <Td rowSpan="4"><strong>Servo Motors</strong></Td>
+      <Td>LDX-227 Servos*</Td>
+      <Td>Main servos for body and legs. <br/>*ALTERNATIVE: MG996R Servos</Td>
       <Td>3</Td>
       <Td><CountryLink productId="ldx-227-servos">Buy</CountryLink></Td>
     </Tr>
+    <Tr>
+      <Td>MG996R Servos</Td>
+      <Td>Servos for the arms</Td>
+      <Td>2</Td>
+      <Td><CountryLink productId="mg996r-servos">Buy</CountryLink></Td>
+    </Tr>
     <Tr>  
-      <Td>MG90s Servo (OPTIONAL)</Td>
-      <Td>Micro servo for arms.</Td>
+      <Td>MG90s Servos (OPTIONAL)*</Td>
+      <Td>Servos for the forearms and hands. <br/>*For NO ARMS version</Td>
       <Td>4</Td>
       <Td><CountryLink productId="mg90s-servos">Buy</CountryLink></Td>
     </Tr> 
@@ -198,23 +204,29 @@ Last updated: 25/03/2025
       <Td><CountryLink productId="camera-module">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>DSI Display Cable, 22-to-15 Pin, 200mm</Td>
-      <Td>Camera connection. Only for RPi 5.</Td>
+      <Td>CSI Ribbon Cable, 22-to-15 Pin, 200mm</Td>
+      <Td>Camera connection for Pi 5.</Td>
       <Td>1</Td>
       <Td><CountryLink productId="camera-ribbon-cable">Buy</CountryLink></Td>
     </Tr>
 
     <Tr>
       <Td rowSpan="11"><strong>Hardware</strong></Td>
+      <Td>M3 Flat Head Assorted Screws</Td>
+      <Td>Mounting screws for servos</Td>
+      <Td>5</Td>
+      <Td><CountryLink productId="m3-screws-assorted">Buy</CountryLink></Td>
+    </Tr>
+    <Tr>
       <Td>M2.5 Flat Head Assorted Screws</Td>
-      <Td>Mounting screws</Td>
-      <Td>100?</Td>
+      <Td>Mounting screws for components</Td>
+      <Td>100+</Td>
       <Td><CountryLink productId="m2.5-screws-assorted">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>M2.5 Heat Inserts (OPTIONAL)</Td>
-      <Td>Metallic sleeves to create reusable screw threads in the plastic. REQUIRES SOLDERING IRON.</Td>
-      <Td>95?</Td>
+      <Td>M2.5 Heat Inserts (OPTIONAL)*</Td>
+      <Td>Metallic sleeves to create reusable screw threads in the plastic. <br/>*Requires soldering iron.</Td>
+      <Td>120+</Td>
       <Td><CountryLink productId="m2.5-heat-inserts">Buy</CountryLink></Td>
     </Tr>
     <Tr>
@@ -225,27 +237,15 @@ Last updated: 25/03/2025
     </Tr>
     <Tr>
       <Td>9mm OD, 20mm Length Compression Springs</Td>
-      <Td>For mechanical movement and tension. 0.6mm Wire Size.</Td>
-      <Td>4</Td>
-      <Td><CountryLink productId="compression-spring">Buy</CountryLink></Td>
-    </Tr>
-    <Tr>
-      <Td>M4 x 100mm Rod</Td>
-      <Td>Axles for the main body.</Td>
-      <Td>1</Td>
-      <Td><CountryLink productId="m4-100mm-rod">Buy</CountryLink></Td>
-    </Tr>
-    <Tr>
-      <Td>M4 x 65mm Rod</Td>
-      <Td>Axles for the main body.</Td>
+      <Td>For mechanical movement and tension. 0.6mm wire size.</Td>
       <Td>2</Td>
-      <Td><CountryLink productId="m4-65mm-rod">Buy</CountryLink></Td>
+      <Td><CountryLink productId="compression-springs">Buy</CountryLink></Td>
     </Tr>
     <Tr>
-      <Td>M4 x 95mm Rod</Td>
-      <Td>Axles for the main body.</Td>
-      <Td>1</Td>
-      <Td><CountryLink productId="m4-95mm-rod">Buy</CountryLink></Td>
+      <Td>M4 x 150mm Threaded Rod*</Td>
+      <Td>Axles for the main body. <br/>*These are to be cut to 100mm, 96mm, and 2x66mm lengths.</Td>
+      <Td>4</Td>
+      <Td><CountryLink productId="m4-150mm-rod">Buy</CountryLink></Td>
     </Tr>
     <Tr>
       <Td>M2 Self Tapping Screws</Td>
@@ -271,9 +271,15 @@ Last updated: 25/03/2025
       <Td>1</Td>
       <Td><CountryLink productId="stackable-header">Buy</CountryLink></Td>
     </Tr>
+    <Tr>
+      <Td>Heat shrink tubing</Td>
+      <Td>For securing wires</Td>
+      <Td>7</Td>
+      <Td><CountryLink productId="heat-shrink-tubing">Buy</CountryLink></Td>
+    </Tr>
 
     <Tr>
-      <Td rowSpan="2"><strong>Hailo HAT Modifications (VERY OPTIONAL)</strong></Td>
+      <Td rowSpan="2"><strong>Hailo HAT Modifications (OPTIONAL)</strong></Td>
       <Td>26 TOPS Hailo HAT Module</Td>
       <Td>AI Accelerator Board</Td>
       <Td>1</Td>
@@ -284,6 +290,57 @@ Last updated: 25/03/2025
       <Td>Used to secure Hailo HAT</Td>
       <Td>4</Td>
       <Td><CountryLink productId="m2.5-40mm-screws">Buy</CountryLink></Td>
+    </Tr>
+  </tbody>
+</Table>
+
+## Tools & Equipment
+
+The following tools are required or recommended for assembling TARS-AI:
+
+<Table>
+  <thead>
+    <Tr>
+      <Th>Tool</Th>
+      <Th>Description</Th>
+      <Th>Required</Th>
+    </Tr>
+  </thead>
+  <tbody>
+    <Tr>
+      <Td>Soldering Kit</Td>
+      <Td>For soldering electrical connections and heat inserts. Includes: Solder, Flux, and Soldering Iron.</Td>
+      <Td>Yes</Td>
+    </Tr>
+    <Tr>
+      <Td>Wire Stripper/Cutter Tool</Td>
+      <Td>For preparing wires and cables.</Td>
+      <Td>Yes</Td>
+    </Tr>
+    <Tr>
+      <Td>Small Phillips + Flathead Screwdriver</Td>
+      <Td>For assembly of components.</Td>
+      <Td>Yes</Td>
+    </Tr>
+    <Tr>
+      <Td>Heat Gun*</Td>
+      <Td>For shrinking heat shrink tubing. <br/>*ALTERNATIVE: Simple lighter</Td>
+      <Td>Yes</Td>
+    </Tr>
+    <Tr>
+      <Td>Hacksaw with 24–32 TPI bi-metal blade</Td>
+      <Td>For cutting threaded rods. <br/>*ALTERNATIVE: Dremel with cutting wheel, Angle grinder, etc.</Td>
+      <Td>Yes</Td>
+    </Tr>
+    <Tr>
+      <Td>Flush Cutters</Td>
+      <Td>For clean cuts and part modification.</Td>
+      <Td>Recommended</Td>
+    </Tr>
+    <Tr>
+      <Td>Narrow Pliers</Td>
+      <Td>For holding and manipulating small parts.</Td>
+      <Td>Recommended</Td>
     </Tr>
   </tbody>
 </Table>

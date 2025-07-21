@@ -82,7 +82,7 @@ export const productLinks: Record<string, ProductLink> = {
   },
   "servo-driver": {
     id: "servo-driver",
-    name: "PCA9685 Servo Driver",
+    name: "PCA9685 16-Channel PWM/Servo Driver",
     countryLinks: {
       "US": "https://www.amazon.com/gp/product/B00EIB0U7A/",
       "CA": "https://a.co/d/bMsC0lm",
@@ -101,7 +101,7 @@ export const productLinks: Record<string, ProductLink> = {
   },
   "buck-converter-servos": {
     id: "buck-converter-servos",
-    name: "Buck Converter for Servos",
+    name: "LM2596 DC 5A Adjustable Buck Converter",
     countryLinks: {
       "US": "https://a.co/d/dQAB650",
     },
@@ -141,34 +141,42 @@ export const productLinks: Record<string, ProductLink> = {
     },
     defaultLink: "https://a.co/d/dCbYTlY"
   },
-  "22-awg-wire-flexible": {
-    id: "22-awg-wire-flexible",
-    name: "22 Gauge Flexible Wire",
+  "dupont-cables": {
+    id: "dupont-cables",
+    name: "20cm Dupont Cables (Male to Female)",
     countryLinks: {
-      "US": "https://a.co/d/hAJWgyZ",
+      "US": "https://a.co/d/76Z8fev",
     },
-    defaultLink: "https://a.co/d/hAJWgyZ"
+    defaultLink: "https://a.co/d/76Z8fev"
   },
   "18-awg-wire-parallel": {
     id: "18-awg-wire-parallel",
     name: "18 Gauge 2 Conductor Parallel Wire",
     countryLinks: {
-      "US": "https://a.co/d/cghGb3z",
+      "US": "https://a.co/d/aZW2UDi",
     },
     defaultLink: "https://a.co/d/cghGb3z"
   },
   // Servos
   "ldx-227-servos": {
     id: "ldx-227-servos",
-    name: "LDX-227 Servos",
+    name: "Main servos for body and legs",
     countryLinks: {
       "US": "https://a.co/d/6Vvombc",
     },
     defaultLink: "https://a.co/d/6Vvombc"
   },
+  "mg996r-servos": {
+    id: "mg996r-servos",
+    name: "Servos for the arms",
+    countryLinks: {
+      "US": "https://a.co/d/9pYf3Ke",
+    },
+    defaultLink: "https://a.co/d/9pYf3Ke"
+  },
   "mg90s-servos": {
     id: "mg90s-servos",
-    name: "MG90s Servos",
+    name: "Servos for the forearms and hands",
     countryLinks: {
       "US": "https://a.co/d/2ME6Dyk",
     },
@@ -212,13 +220,21 @@ export const productLinks: Record<string, ProductLink> = {
   },
   "camera-ribbon-cable": {
     id: "camera-ribbon-cable",
-    name: "DSI Display Cable, 22-to-15 Pin, 200mm",
+    name: "CSI Ribbon Cable, 22-to-15 Pin, 200mm",
     countryLinks: {
       "US": "https://a.co/d/9yLM4VJ",
     },
     defaultLink: "https://a.co/d/9yLM4VJ"
   },
   // Hardware
+  "m3-screws-assorted": {
+    id: "m3-screws-assorted",
+    name: "M3 Flat Head Assorted Screws",
+    countryLinks: {
+      "US": "https://a.co/d/0nQwJKW",
+    },
+    defaultLink: "https://a.co/d/0nQwJKW"
+  },
   "m2.5-screws-assorted": {
     id: "m2.5-screws-assorted",
     name: "M2.5 Flat Head Assorted Screws",
@@ -251,29 +267,13 @@ export const productLinks: Record<string, ProductLink> = {
     },
     defaultLink: "https://a.co/d/78x72h2"
   },
-  "m4-100mm-rod": {
-    id: "m4-100mm-rod",
-    name: "M4 x 100mm Rod",
+  "m4-150mm-rod": {
+    id: "m4-150mm-rod",
+    name: "M4 x 150mm Threaded Rod",
     countryLinks: {
-      "US": "https://a.co/d/1P89H8p"
+      "US": "https://a.co/d/9MS6PuU"
     },
-    defaultLink: "https://a.co/d/1P89H8p"
-  },
-  "m4-65mm-rod": {
-    id: "m4-65mm-rod",
-    name: "M4 x 65mm Rod",
-    countryLinks: {
-      "US": "https://a.co/d/2AvIA0n"
-    },
-    defaultLink: "https://a.co/d/2AvIA0n"
-  },
-  "m4-95mm-rod": {
-    id: "m4-95mm-rod",
-    name: "M4 x 65mm Rod",
-    countryLinks: {
-      "US": ""
-    },
-    defaultLink: ""
+    defaultLink: "https://a.co/d/9MS6PuU"
   },
   "m2-tapping-screws": {
     id: "m2-tapping-screws",
@@ -306,6 +306,14 @@ export const productLinks: Record<string, ProductLink> = {
       "US": "https://a.co/d/diQkJR2"
     },
     defaultLink: "https://a.co/d/diQkJR2"
+  },
+  "heat-shrink-tubing": {
+    id: "heat-shrink-tubing",
+    name: "Heat Shrink Tubing",
+    countryLinks: {
+      "US": "https://a.co/d/5H7lzoC"
+    },
+    defaultLink: "https://a.co/d/5H7lzoC"
   },
   // Hailo HAT Modifications
   "hailo-hat": {
