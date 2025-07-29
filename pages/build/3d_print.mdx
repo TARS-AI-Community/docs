@@ -12,7 +12,41 @@ May be out of date or incomplete. Always confirm on our [Discord](https://discor
 # 3D Printing Guide
 These are instructions for the TARS-AI 3D printed parts.
 
-3D printing guide for Hardware v2.0 coming soon.
+## File Locations
+
+There are two versions of the 3D printed files available:
+
+1. **Heat-Inserts Version** - Located in the [V2_files/heat_inserts version](https://github.com/TARS-AI-Community/TARS-AI/tree/dev/V2_files/heat_inserts%20version/V2_3d%20printed%20files) directory
+2. **Normal Version** - Located in the [V2_files/normal_version](https://github.com/TARS-AI-Community/TARS-AI/tree/dev/V2_files/normal_version/V2_3d_printed_files) directory
+
+## Choosing What to Print
+
+The files are organized into several main directories:
+
+- `LEFT LEG NO ARMS` - Components for the left leg without arm attachments
+- `LEFT LEG` - Components for the left leg with arm attachments
+- `RIGHT LEG NO ARMS` - Components for the right leg without arm attachments
+- `RIGHT LEG` - Components for the right leg with arm attachments
+- `TORSO` - Core body components
+
+### Build Options
+
+1. **Building TARS with Arms**
+   - Print all files from the `LEFT LEG` and `RIGHT LEG` folders
+   - Print all files from the `TORSO` folder
+
+2. **Building TARS without Arms**
+   - Print all files from the `LEFT LEG NO ARMS` and `RIGHT LEG NO ARMS` folders
+   - Print all files from the `TORSO` folder
+
+## Printing Guidelines
+
+- Files denoted with (TPU) should be printed in TPU if available. Otherwise, PLA/PETG is acceptable.
+- You can use this [TARS_PrintPlates.3mf](https://github.com/TARS-AI-Community/TARS-AI/blob/dev/V2_files/heat_inserts%20version/V2_3d%20printed%20files/TARS_PrintPlates.3mf) file as reference for how you can organize your print plates and identify components.
+  - However, please note that it is NOT RECOMMENDED to print the plates exactly as shown in the file. The printer settings provided in the file may not work for your printer/preferences.
+  - Ideally you print plates with components of different filament in separate print sessions to avoid wasting material.
+    - The only exception to this is the Upper Lid, where multiple filaments are used in the same individual component for multi-color printing.
+- Only print the supports that you need.
 
 ## Next Steps
 Also see the [Bill of Materials](/build/bom). 
